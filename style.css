@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url("Field.jpg");
+    background-position: center;
+    background-size:cover;
+    height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family:'Courier New', Courier, monospace;
+  font-size:x-large;
+  font-weight:bolder;
+}
+.navbar .menu-links {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    gap: 35px;
+    border: 5px solid green;
+    background-color:#135a10;
+    border-radius: 10px;
+    box-shadow: 2px 2px #bebebe;
+}
+.navbar a {
+  color:#ffffff;
+  text-decoration: none;
+  transition: 0.1s ease;
+}
+#search{
+  border-radius: 10px;
+  width: 170px;
+  height: 30px;
+  position: relative;
+  top: -40px;
+  left: 1100px;
+  color: 000000;
+  font-weight: bolder;
+}
+input:placeholder-shown{
+  padding-left: 15px;
+}
+.quote{
+  position: relative;
+  left: 300px;
+  top: 250px;
+  width: 700px;
+  color: #ffffff;
+  transition: 1s ease-in-out;
+}
+.quote p{
+  font-weight: bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.quote:hover{
+  color: #000000;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+.quote button{
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  left: 170px;
+  overflow: hidden;
+  transition: 1.5s ease;
+  top: 60px;
+  padding: 15px 25px;
+}
+   
+.quote button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+}
+   
+.quote button:hover {
+  color: #ffffff;
+  background-color: #000000;
+  transition: 1.5s ease-in-out;
+}
+   
+.quote button:hover::before {
+    width: 100%;
+}
+#btn{
+  position: relative;
+  left: 90%;
+  top: -122px;
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
